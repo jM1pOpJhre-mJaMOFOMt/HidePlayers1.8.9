@@ -1,0 +1,16 @@
+[
+{
+  "modid": "hideplayers",
+  "name": "Hide Players",
+  "description": "Hide players",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["nur"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
