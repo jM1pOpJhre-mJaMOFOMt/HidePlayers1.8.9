@@ -9,7 +9,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.InputEvent.KeyInputEvent;
 
 public class ClientEventHandler {
-	static boolean hidden = false;
+	public static boolean hidden = false;
 	public static void toggle() {
 		hidden=!hidden;
 		if(hidden) {
@@ -21,15 +21,14 @@ public class ClientEventHandler {
 			Minecraft.getMinecraft().ingameGUI.setRecordPlaying(new ChatComponentText(""+EnumChatFormatting.GREEN+"Players are now visible."), true);
 		}
 	}
+
 	@SubscribeEvent
-    public void onKeyInput(KeyInputEvent event)
-    {
+    public void onKeyInput(KeyInputEvent event) {
 		if (Keybinds.toggle.isPressed()) toggle();
     }
+
 	@SubscribeEvent
 	public void pre(RenderPlayerEvent.Pre event) {
-		if(hidden) {
-			event.setCanceled(true);
-		}
+		if (hidden) event.setCanceled(true);
 	}
 }
