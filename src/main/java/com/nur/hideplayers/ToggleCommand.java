@@ -16,49 +16,41 @@ public class ToggleCommand implements ICommand {
 	
 	@Override
 	public int compareTo(ICommand arg0) {
-		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
 	public String getCommandName() {
-		// TODO Auto-generated method stub
 		return "playerstoggle";
 	}
 
 	@Override
 	public String getCommandUsage(ICommandSender sender) {
-		// TODO Auto-generated method stub
-		return null;
+		return "playerstoggle";
 	}
 
 	@Override
 	public List<String> getCommandAliases() {
-		// TODO Auto-generated method stub
 		return comAliases;
 	}
 
 	@Override
-	public void processCommand(ICommandSender sender, String[] args) throws CommandException {
-		// TODO Auto-generated method stub
+	public void processCommand(ICommandSender sender, String[] args) {
 		ClientEventHandler.toggle();
 	}
 
 	@Override
 	public boolean canCommandSenderUseCommand(ICommandSender sender) {
-		// TODO Auto-generated method stub
 		return true;
 	}
 
 	@Override
 	public List<String> addTabCompletionOptions(ICommandSender sender, String[] args, BlockPos pos) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public boolean isUsernameIndex(String[] args, int index) {
-		// TODO Auto-generated method stub
 		return false;
 	}
 }
