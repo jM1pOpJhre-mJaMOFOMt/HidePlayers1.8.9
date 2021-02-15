@@ -1,12 +1,11 @@
 package com.nur.hideplayers;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import net.minecraft.command.CommandException;
 import net.minecraft.command.ICommand;
 import net.minecraft.command.ICommandSender;
 import net.minecraft.util.BlockPos;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ToggleCommand implements ICommand {
 	private final ArrayList<String> comAliases = new ArrayList<String>();
