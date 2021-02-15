@@ -4,15 +4,11 @@ import net.minecraft.command.ICommand;
 import net.minecraft.command.ICommandSender;
 import net.minecraft.util.BlockPos;
 
-import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class ToggleCommand implements ICommand {
-    private final ArrayList<String> comAliases = new ArrayList<String>();
-
-    public ToggleCommand() {
-        comAliases.add("ptoggle");
-    }
+    private final List<String> comAliases = Collections.singletonList("ptoggle");
 
     @Override
     public int compareTo(ICommand arg0) {
